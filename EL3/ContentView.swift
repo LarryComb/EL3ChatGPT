@@ -47,6 +47,7 @@ struct ContentView: View {
             case .failure(let error):
                 self.messages.append(Message(text: error.localizedDescription, isUser: false))
             }
+            
         }
         
         inputMessage = ""
